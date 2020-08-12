@@ -117,6 +117,16 @@ let map = L.map('mapid', {
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
+// Accessing the Toronto neighborhoods GeoJSON URL.
+let torontoHoods = "https://raw.githubusercontent.com/Waking-Dreamer/Mapping_Earthquakes/Mapping_GeoJSON_Polygons/JSON/torontoNeighborhoods.json";
+
+// Grabbing our GeoJSON data.
+d3.json(torontoHoods).then(function(data) {
+    console.log(data);
+  	// Creating a GeoJSON layer with the retrieved data.
+	  L.geoJson(data).addTo(map);
+	});
+
 // // Accessing the airport GeoJSON URL
 // // Having the tileLayer() method before accessing large datasets ensures that the map gets loaded before the data is added to it.
 // let TorontoData = "https://raw.githubusercontent.com/Waking-Dreamer/Mapping_Earthquakes/Mapping_GeoJSON_Linestrings/JSON/torontoRoutes.json";
