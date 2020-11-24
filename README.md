@@ -10,6 +10,6 @@ Up to date earthquake API data is pulled from https://earthquake.usgs.gov/
 
 To run, you will need to open the index.html file in a web browser. This file references the style.css, config.js, and logic.js files located in the Static folder. The config.js file is not stored in the github repo as it contains a private API key.
 
-# Image of Map in Web Broswer
+# Image of Map in Web Browser
 
 ![Map Sample](https://github.com/Waking-Dreamer/Mapping_Earthquakes/blob/master/Images/Map_Sample.png)
