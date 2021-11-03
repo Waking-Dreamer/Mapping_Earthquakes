@@ -1,1 +1,2 @@
-## Update UI Font & Color Scheme
+# Update UI Font & Color Scheme
+# Correct Display error
